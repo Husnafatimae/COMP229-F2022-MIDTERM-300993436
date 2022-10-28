@@ -19,7 +19,7 @@ export function displayAddPage(req, res, next) {
     /*****************
     * ADD CODE HERE *
     *****************/
-   res.render('index', { title: 'Add Book', page: 'books/edit', books: {}});
+   res.render('index', { title: 'Add Book', page: 'books/edit', book: {}});
 }
 
 // POST process the Book Details page and create a new Book - CREATE
@@ -57,7 +57,7 @@ export function displayEditPage(req, res, next) {
             console.error(err);
             res.end(err);
         }
-        res.render('index', { title: 'Edit Book', page: 'books/edit', books: book });
+        res.render('index', { title: 'Edit Book', page: 'books/edit', book: book });
     });
 
 }
