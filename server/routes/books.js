@@ -1,7 +1,16 @@
+//File Name: Books
+//Author Name: Husna Fatima
+//Student Id: 300993436
+//Midterm
 // modules required for routing
 import { Router } from "express";
 
-import { displayAddPage, displayBookList, displayEditPage, processAddPage, processDelete, processEditPage } from "../controllers/books.js";
+import { displayAddPage, 
+    displayBookList, 
+    displayEditPage, 
+    processAddPage, 
+    processDelete, 
+    processEditPage } from "../controllers/books.js";
 
 const router = Router();
 
